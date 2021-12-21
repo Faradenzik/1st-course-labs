@@ -1,8 +1,5 @@
-﻿#include <math.h>
-#include <stdio.h>
-#include <conio.h>
 #include <iostream>
-#include <iomanip>
+#include <math.h>
 using namespace std;
 
 int main()
