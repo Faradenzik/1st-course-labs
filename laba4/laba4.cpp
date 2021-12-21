@@ -15,7 +15,7 @@ double inNum()
 		{
 			cin.clear();
 			cin.ignore(INT_MAX, '\n');
-			cout << "Íåäîïóñòèìîå çíà÷åíèå.\n";
+			cout << "ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ.\n";
 		}
 	}
 	return input;
@@ -42,11 +42,11 @@ double val_Y(double a)
 
 void out_rez(double a, double b, double h, double n)
 {
-	cout << endl << "Âûáåðèòå ôóíêöèþ äëÿ âûâîäà" << endl;
+	cout << endl << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ñ„ÑƒÐ½ÐºÑ†Ð¸ÑŽ Ð´Ð»Ñ Ð²Ñ‹Ð²Ð¾Ð´Ð°" << endl;
 	cout << "1) S(x)" << endl;
 	cout << "2) Y(x)" << endl;
 	cout << "3) |Y(x) - S(x)|" << endl;
-	cout << "4) Âñå ôóíêöèè" << endl;
+	cout << "4) Ð’ÑÐµ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸" << endl;
 	
 	int ch;
 
@@ -58,23 +58,23 @@ void out_rez(double a, double b, double h, double n)
 		{
 			cin.clear();
 			cin.ignore(INT_MAX, '\n');
-			cout << "Íåäîïóñòèìîå çíà÷åíèå.\n";
+			cout << "ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ.\n";
 
-			cout << endl << "Âûáåðèòå ôóíêöèþ äëÿ âûâîäà" << endl;
+			cout << endl << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ñ„ÑƒÐ½ÐºÑ†Ð¸ÑŽ Ð´Ð»Ñ Ð²Ñ‹Ð²Ð¾Ð´Ð°" << endl;
 			cout << "1) S(x)" << endl;
 			cout << "2) Y(x)" << endl;
 			cout << "3) |Y(x) - S(x)|" << endl;
-			cout << "4) Âñå ôóíêöèè" << endl;
+			cout << "4) Ð’ÑÐµ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸" << endl;
 		}
 		else if (ch < 1 || ch > 4)
 		{
-			cout << "Íåäîïóñòèìîå çíà÷åíèå.\n";
+			cout << "ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ.\n";
 			
-			cout << endl << "Âûáåðèòå ôóíêöèþ äëÿ âûâîäà" << endl;
+			cout << endl << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ñ„ÑƒÐ½ÐºÑ†Ð¸ÑŽ Ð´Ð»Ñ Ð²Ñ‹Ð²Ð¾Ð´Ð°" << endl;
 			cout << "1) S(x)" << endl;
 			cout << "2) Y(x)" << endl;
 			cout << "3) |Y(x) - S(x)|" << endl;
-			cout << "4) Âñå ôóíêöèè" << endl;
+			cout << "4) Ð’ÑÐµ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸" << endl;
 		}
 		else
 		{
@@ -121,15 +121,15 @@ int main()
 	
 	double a, b, h, n;
 
-	cout << "Ââåäèòå a: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ a: ";
 	a = inNum();
-	cout << "Ââåäèòå b: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ b: ";
 	b = inNum();
 
 	if (a > b)
 	{
 		double swap;
-		cout << "Ïîñêîëüêó a áoëüøå b, ìû ïîìåíÿëè èõ ìåñòàìè" << endl;
+		cout << "ÐŸÐ¾ÑÐºÐ¾Ð»ÑŒÐºÑƒ a Ð±oÐ»ÑŒÑˆÐµ b, Ð¼Ñ‹ Ð¿Ð¾Ð¼ÐµÐ½ÑÐ»Ð¸ Ð¸Ñ… Ð¼ÐµÑÑ‚Ð°Ð¼Ð¸" << endl;
 		swap = a;
 		a = b;
 		b = swap;
@@ -137,7 +137,7 @@ int main()
 
 	while (true)
 	{
-		cout <<  "Ââåäèòå h: ";
+		cout <<  "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ h: ";
 		h = inNum();
 		if (h > 0)
 		{
@@ -145,11 +145,11 @@ int main()
 		}
 		else
 		{
-			cout << "Íåäîïóñòèìîå çíà÷åíèå.\n" << endl;
+			cout << "ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ.\n" << endl;
 		}
 	}
 
-	cout << "Ââåäèòå n: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ n: ";
 	n = inNum();
 
 	out_rez(a, b, h, n);
